@@ -14,6 +14,11 @@ var app = express();
 
 var router = express.Router();
 
+
+//requiring routes
+require("./config/routes")(router);
+
+
 // saving space for more content here
 
 
