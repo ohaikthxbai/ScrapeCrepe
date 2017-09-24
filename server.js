@@ -3,8 +3,8 @@ var express = require("express");
 var exphb = require("express-handlebars");
 var mongoodse = require("mongoose");
 var bodyParser = require("body-parser");
-var cheerio = require("cheerio");
-var request = require("request");
+//var cheerio = require("cheerio");
+//var request = require("request");
 
 // port setup
 var PORT = process.env.PORT || 3000; 
