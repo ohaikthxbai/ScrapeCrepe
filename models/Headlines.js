@@ -1,5 +1,5 @@
 // adding file first
-var mongoose = reuiqre("mongoose");
+var mongoose = require("mongoose");
 var Schema =   mongoose.Schema;
 
 var Headlines = new Schema({
