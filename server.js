@@ -5,6 +5,8 @@ var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 //var cheerio = require("cheerio");
 //var request = require("request");
+var Headlines = require("./models/Headlines.js");
+var Notes = require("./models/Notes.js");
 
 // port setup
 var PORT = process.env.PORT || 3000; 

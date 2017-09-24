@@ -13,13 +13,8 @@ var Headlines = new Schema({
         type: String, 
         required: true, 
         trim: true
-    },    
-    iamge: {
-        type: String, 
-        required: false, 
-        trim: true
-    },    
-    preview: {
+    },        
+    summary: {
         type: String, 
         required: true, 
         trim: true
