@@ -19,6 +19,15 @@ $(document).ready(function() {
         });
     }
 
+    function articleScrape() {
+        $.ajax({
+            method: "GET",
+            url: `/scrape`
+        }).done(function(data) {
+            window.location.reload(true);
+        });
+    }
+
     function displayArticles(content) {
         var articles = [];
         for (var i = 0; i < articles.length; i++) {
