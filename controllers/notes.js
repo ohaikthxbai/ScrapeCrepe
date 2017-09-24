@@ -1,4 +1,4 @@
-var Note = require('../models/Note');
+var Note = require('../models/Notes');
 
 module.exports = {
     get: function(data, db) {
