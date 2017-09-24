@@ -35,4 +35,19 @@ module.exports = function(router) {
             res.json(data);
         });
     });
+
+    router.delete('/api/headlines/:id', function (req, res) {
+        var query = {};
+        query._id = req.params.id;
+        headlinesCtrlr.delete(query, function (err, data) {
+            res.json(data);
+        });
+    });
+
+    router.patch('api/headlines', function (req, res) {
+        headlinesCtrlr.update(req.body, function (err, data) {
+            res.json(data);
+        });
+    });
+    
 }
