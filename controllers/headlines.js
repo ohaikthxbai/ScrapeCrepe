@@ -7,7 +7,7 @@ module.exports = {
         for (var i = 0; i < articles.length; i++) {
             articles[i].saved = false;
         }
-        Headline.collection.insertMAny(articles, {ordered: false}, function (error, data){
+        Headline.collection.insertMany(articles, {ordered: false}, function (error, data){
             db(error, data);
         });
     }
